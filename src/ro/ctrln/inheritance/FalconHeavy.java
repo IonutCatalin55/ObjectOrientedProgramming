@@ -39,10 +39,20 @@ public class FalconHeavy extends Battleship implements Starship, Rocket {
                 '}';
     }
 
-    @Override
+    @Override //ADNOTARE -> SE MARCHEAZA FAPTUL CA SE SUPRASCRIE O METODA
     public void launchCountDown() {
         for(int i = 10;i >= 0; i-- ){
             System.out.println("Launch CountDown is: " + i);
         }
     }
+
+
+    // Aceasta metoda este mostenita din lasa parinte si este suprascrisa
+    public void escapeProcedure(int escapePods){
+        super.escapeProcedure(escapePods);
+        System.out.println("We are in FalconHeavy now!");
+        System.out.println("Escape procedure intiated in FalconHeavy class with " + escapePods +" escape pods!");
+
+    }
+
 }

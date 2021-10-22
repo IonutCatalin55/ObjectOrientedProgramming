@@ -8,7 +8,7 @@ public class TieFighter implements Starship{
 
     @Override
     public void warp() {
-        System.out.println("TieFighter is noe in warp speed!");
+        System.out.println("TieFighter is now in warp speed!");
     }
 
     @Override
